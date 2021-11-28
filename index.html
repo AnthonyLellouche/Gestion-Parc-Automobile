@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion parc Automobile</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+<body>
+
+    <div class=TitreCentral>
+        <h1>GESTION PARC AUTOMOBILE</h1>
+    </div>
+
+    <div class="formulaireDiv">
+        <form id="formVehicule">
+        <label>Roues</label>
+        <input  name="roue" type="text" placeholder="Nombre de roues">
+        <br />
+        <label>Couleur</label>
+        <input  name="couleur" type="text" placeholder="Couleur du véhicule">
+        <br />
+        <label>Prix</label>
+        <input name="prix" type="text"  placeholder="Prix du vehicule">
+        <br />  
+        <label>Puissance</label>
+        <input name="puissance" type="text"  placeholder="Puissance du vehicule">
+        <br />
+        <label>Immatriculation</label>
+        <input name="immatriculation" type="text" placeholder="Immatriculation du vehicule">
+        <br/>
+        <label for="type">Type de vehicule: </label>
+        <select id="select" name="type">
+            <option value="voiture">Voiture</option>
+            <option value="camion">Camion</option>
+            <option value="commerciale">Commerciale</option>
+        </select>
+        <br/>
+        <label for="typeCamion">Si camion selectionné, merci d'indiquer son poids</label>
+        <input name="poidsCamion" type="text" placeholder="poids du Camion">
+        <br/>
+        <label for="typeCo">Si commerciale selectionné, merci d'indiquer la marque</label>
+        <input name="marqueCo" type="text" placeholder="Marque du vehicule">
+        <br/>
+        <button  type="submit">Ajouter</button>
+        </form>
+        
+    </div>
+    <div><h1>Tout les vehicules de ce parc</h1></div>
+    <div class="vehiculeDiv">
+       
+
+    </div>
+    
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
